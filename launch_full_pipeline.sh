@@ -96,7 +96,7 @@ RUN_CLUSTER=1               # E: Cluster cell calling: `cluster-cell-calling`
 RUN_CELL_TYPES=1            # F: Integration with scRNA-seq: `cell-types-annotation`
 RUN_CELL_CONTAMINATION=0    # G: Remove contamination: `cell-contamination-removal-analysis`
 RUN_CLONE_PHYLOGENY=0       # H: Clone Phylogeny Analysis: `clone-phylogeny-analysis`
-RUN_DE_GO=0                 # I: DE GO analysis: `de-go-analysis`
+RUN_DE_GO=1                 # I: DE GO analysis: `de-go-analysis`
 RUN_RSHINY=1                # J: R/Shiny app: `rshiny-app`
 
 # ------------------------------------------------------------------------------

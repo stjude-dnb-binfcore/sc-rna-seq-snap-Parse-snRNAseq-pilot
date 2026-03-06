@@ -12,7 +12,7 @@
 plot_integrated_clusters = function (seurat_obj, palette, variable_value) { 
   ## take an integrated Seurat object, plot distributions over the specified variable
   
-  count_table <- table(seurat_obj@meta.data$seurat_clusters, seurat_obj@meta.data$variable_value)
+  count_table <- table(seurat_obj@meta.data$seurat_clusters, seurat_obj@meta.data[[variable_value]])
   count_mtx   <- as.data.frame.matrix(count_table)
   count_mtx$cluster <- rownames(count_mtx)
   melt_mtx    <- melt(count_mtx)
